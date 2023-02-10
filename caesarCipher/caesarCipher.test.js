@@ -39,3 +39,7 @@ test('Returns a ciphered lowercase string shifted backwards by multiple letters'
 test('Returns a ciphered uppercase string shifted backwards by multiple letters', () => {
     expect(caesarCipher('WXYZ', -3)).toBe('TUVW');
 });
+
+test('Returns a ciphered lowercase string looping to the front of the alphabet if the end is passed', () => {
+    expect(caesarCipher('wxyz', 4)).toBe('abcd');
+})
