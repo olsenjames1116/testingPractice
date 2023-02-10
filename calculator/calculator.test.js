@@ -7,5 +7,9 @@ test('Calculator object is created', () => {
 });
 
 test('Calculator contains add method', () => {
-    expect(calculator.add()).toEqual('add');
+    expect(calculator.add()).toBe('add');
+});
+
+test('Calculator contains subtract method', () => {
+    expect(calculator.subtract()).toBe('subtract');
 });
