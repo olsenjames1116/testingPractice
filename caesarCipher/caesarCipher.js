@@ -1,5 +1,12 @@
 export default function caesarCipher(string, unit) {
-    const stringArray = string.split('');
+    let cipheredString = '';
 
-    return stringArray.join('');
+    for(let i = 0; i < string.length; i++) {
+        let charCode = string.charCodeAt(i);
+        charCode = charCode + unit;
+
+        cipheredString += String.fromCharCode(charCode);
+    }
+
+    return cipheredString;
 }
