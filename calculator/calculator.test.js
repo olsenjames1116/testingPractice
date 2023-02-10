@@ -21,3 +21,7 @@ test('Calculator contains divide method', () => {
 test('Calculator contains multiply method', () => {
     expect(typeof calculator['multiply']).toBe('function');
 });
+
+test('Add method returns a number', () => {
+    expect(typeof calculator.add()).toBe('number');
+});
