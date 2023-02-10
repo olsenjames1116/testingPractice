@@ -29,3 +29,7 @@ test('Add method returns a number', () => {
 test('Subtract method returns a number', () => {
     expect(typeof calculator.subtract()).toBe('number');
 });
+
+test('Divide method returns a number', () => {
+    expect(typeof calculator.divide()).toBe('number');
+});
