@@ -38,6 +38,11 @@ export default function caesarCipher(string, unit) {
     let cipheredString = '';
 
     for(let i = 0; i < string.length; i++) {
+        if(!/^[A-Za-z0-9]*$/.test(string.charAt(i))) {
+            cipheredString += string.charAt(i);
+            continue;
+        }
+
         let charCode = string.charCodeAt(i);
 
         if(/^[a-z]*$/.test(string.charAt(i))) charCode = convertLowercase(charCode, unit);

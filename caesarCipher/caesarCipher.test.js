@@ -59,3 +59,7 @@ test('Returns a ciphered uppercase string looping to the back of the alphabet if
 test('Returns a ciphered string with the same case', () => {
     expect(caesarCipher('AbcDe', 1)).toBe('BcdEf');
 });
+
+test('Keeps punctuation the same', () => {
+    expect(caesarCipher('Hey!', 1)).toBe('Ifz!');
+});
