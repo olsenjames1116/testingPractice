@@ -1,7 +1,11 @@
 import Calculator from './calculator.js';
 
-test('Calculator object is created', () => {
-    const calculator = new Calculator();
+const calculator = new Calculator();
 
+test('Calculator object is created', () => {
     expect(calculator).toEqual({});
+});
+
+test('Calculator contains add method', () => {
+    expect(calculator.add()).toEqual('add');
 });
