@@ -13,3 +13,7 @@ test('Calculator contains add method', () => {
 test('Calculator contains subtract method', () => {
     expect(calculator.subtract()).toBe('subtract');
 });
+
+test('Calculator contains divide method', () => {
+    expect(calculator.divide()).toBe('divide');
+});
