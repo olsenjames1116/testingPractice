@@ -28,6 +28,14 @@ test('Returns a ciphered lowercase string shifted backwards by one letter', () =
     expect(caesarCipher('wxyz', -1)).toBe('vwxy');
 });
 
+test('Returns a ciphered uppercase string shifted backwards by one letter', () => {
+    expect(caesarCipher('WXYZ', -1)).toBe('VWXY');
+});
+
 test('Returns a ciphered lowercase string shifted backwards by multiple letters', () => {
     expect(caesarCipher('wxyz', -3)).toBe('tuvw');
+});
+
+test('Returns a ciphered uppercase string shifted backwards by multiple letters', () => {
+    expect(caesarCipher('WXYZ', -3)).toBe('TUVW');
 });
