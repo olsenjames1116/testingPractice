@@ -19,3 +19,7 @@ test('Returns a ciphered uppercase string shifted by one letter', () => {
 test('Returns a ciphered lowercase string shifted by multiple letters', () => {
     expect(caesarCipher('abcd', 5)).toBe('fghi');
 });
+
+test('Returns a ciphered uppercase string shifted by multiple letters', () => {
+    expect(caesarCipher('ABCD', 5)).toBe('FGHI');
+});
