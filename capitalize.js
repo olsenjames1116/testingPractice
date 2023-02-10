@@ -1,3 +1,7 @@
 export default function capitalize(string) {
-    return string.toUpperCase();
+    const capitalString = string.toUpperCase();
+    
+    const stringArray = capitalString.split('');
+
+    return stringArray.join('');
 }
