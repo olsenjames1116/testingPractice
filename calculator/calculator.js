@@ -8,7 +8,7 @@ export default class Calculator {
     }
 
     divide(a, b) {
-        return 1;
+        return a / b;
     }
 
     multiply(a, b) {

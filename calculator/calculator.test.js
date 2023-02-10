@@ -45,3 +45,7 @@ test('Add method returns the sum of two numbers', () => {
 test('Subtract method returns the difference of two numbers', () => {
     expect(calculator.subtract(6, 1)).toBe(5);
 });
+
+test('Divide method returns the quotient of two numbers', () => {
+    expect(calculator.divide(6, 2)).toBe(3);
+});
