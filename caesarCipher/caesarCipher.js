@@ -1,4 +1,4 @@
-function convertCode(charCode, unit) {
+function convertLowercase(charCode, unit) {
     let cipheredCode = charCode + unit;
 
     if(cipheredCode > 122) {
@@ -10,12 +10,27 @@ function convertCode(charCode, unit) {
     return cipheredCode;
 }
 
+function convertUppercase(charCode, unit) {
+    let cipheredCode = charCode + unit;
+
+    if(cipheredCode > 90) {
+        cipheredCode = cipheredCode - 90;
+        cipheredCode = 64 + cipheredCode;
+        return cipheredCode;
+    }
+
+    return cipheredCode;
+}
+
 export default function caesarCipher(string, unit) {
     let cipheredString = '';
 
     for(let i = 0; i < string.length; i++) {
         let charCode = string.charCodeAt(i);
-        charCode = convertCode(charCode, unit);
+
+        if(/^[a-z]*$/.test(string.charAt(i))) charCode = convertLowercase(charCode, unit);
+
+        if(/^[A-Z]*$/.test(string.charAt(i))) charCode = convertUppercase(charCode, unit);
 
         cipheredString += String.fromCharCode(charCode);
     }
