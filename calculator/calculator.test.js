@@ -49,3 +49,7 @@ test('Subtract method returns the difference of two numbers', () => {
 test('Divide method returns the quotient of two numbers', () => {
     expect(calculator.divide(6, 2)).toBe(3);
 });
+
+test('Multiply method returns the product of two numbers', () => {
+    expect(calculator.multiply(2, 6)).toBe(12);
+});
