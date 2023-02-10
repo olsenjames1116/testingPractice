@@ -1,6 +1,6 @@
 export default class Calculator {
     add(a, b) {
-        return 1;
+        return a + b;
     }
 
     subtract(a, b) {

@@ -37,3 +37,7 @@ test('Divide method returns a number', () => {
 test('Multiply method returns a number', () => {
     expect(typeof calculator.multiply()).toBe('number');
 });
+
+test('Add method returns the sum of two numbers', () => {
+    expect(calculator.add(1, 6)).toBe(7);
+});
