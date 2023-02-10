@@ -9,5 +9,9 @@ test('Returns a capital letter', () => {
 });
 
 test('Converts a string to an array and back', () => {
-    expect(capitalize('string')).toStrictEqual('STRING');
+    expect(capitalize('STRING')).toStrictEqual('STRING');
+});
+
+test('Capitalizes only the first letter', () => {
+    expect(capitalize('string')).toStrictEqual('String');
 });
