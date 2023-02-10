@@ -35,6 +35,8 @@ function convertUppercase(charCode, unit) {
 }
 
 export default function caesarCipher(string, unit) {
+    if(typeof string !== 'string') return 'Error: please pass a string';
+    
     let cipheredString = '';
 
     for(let i = 0; i < string.length; i++) {

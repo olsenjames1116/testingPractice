@@ -63,3 +63,7 @@ test('Returns a ciphered string with the same case', () => {
 test('Keeps punctuation the same', () => {
     expect(caesarCipher('Hey!', 1)).toBe('Ifz!');
 });
+
+test('Returns error message if anything other than a string is passed', () => {
+    expect(caesarCipher(1234, 1)).toBe('Error: please pass a string');
+});
