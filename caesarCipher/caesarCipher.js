@@ -25,6 +25,12 @@ function convertUppercase(charCode, unit) {
         return cipheredCode;
     }
 
+    if(cipheredCode < 65) {
+        cipheredCode = 65 - cipheredCode;
+        cipheredCode = 91 - cipheredCode;
+        return cipheredCode;
+    }
+
     return cipheredCode;
 }
 
