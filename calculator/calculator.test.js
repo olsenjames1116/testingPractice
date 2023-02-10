@@ -25,3 +25,7 @@ test('Calculator contains multiply method', () => {
 test('Add method returns a number', () => {
     expect(typeof calculator.add()).toBe('number');
 });
+
+test('Subtract method returns a number', () => {
+    expect(typeof calculator.subtract()).toBe('number');
+});
