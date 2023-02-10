@@ -12,6 +12,6 @@ export default class Calculator {
     }
 
     multiply(a, b) {
-        return 'multiply';
+        return 1;
     }
 }
