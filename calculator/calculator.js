@@ -10,4 +10,8 @@ export default class Calculator {
     divide(a, b) {
         return 'divide';
     }
+
+    multiply(a, b) {
+        return 'multiply';
+    }
 }

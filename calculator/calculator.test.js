@@ -7,13 +7,17 @@ test('Calculator object is created', () => {
 });
 
 test('Calculator contains add method', () => {
-    expect(calculator.add()).toBe('add');
+    expect(typeof calculator['add']).toBe('function');
 });
 
 test('Calculator contains subtract method', () => {
-    expect(calculator.subtract()).toBe('subtract');
+    expect(typeof calculator['subtract']).toBe('function');
 });
 
 test('Calculator contains divide method', () => {
-    expect(calculator.divide()).toBe('divide');
+    expect(typeof calculator['divide']).toBe('function');
+});
+
+test('Calculator contains multiply method', () => {
+    expect(typeof calculator['multiply']).toBe('function');
 });
