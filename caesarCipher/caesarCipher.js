@@ -7,6 +7,12 @@ function convertLowercase(charCode, unit) {
         return cipheredCode;
     }
 
+    if(cipheredCode < 97) {
+        cipheredCode = 97 - cipheredCode;
+        cipheredCode = 123 - cipheredCode;
+        return cipheredCode;
+    }
+
     return cipheredCode;
 }
 
