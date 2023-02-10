@@ -71,3 +71,7 @@ test('Returns error message if anything other than a string is passed', () => {
 test('Ignores spaces', () => {
     expect(caesarCipher('ab c', 1)).toBe('bc d');
 });
+
+test('Ignores numbers in a string', () => {
+    expect(caesarCipher('ab1', 1)).toBe('bc1');
+});

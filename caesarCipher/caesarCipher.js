@@ -36,11 +36,11 @@ function convertUppercase(charCode, unit) {
 
 export default function caesarCipher(string, unit) {
     if(typeof string !== 'string') return 'Error: please pass a string';
-    
+
     let cipheredString = '';
 
     for(let i = 0; i < string.length; i++) {
-        if(!/^[A-Za-z0-9]*$/.test(string.charAt(i))) {
+        if(!/^[A-Za-z]*$/.test(string.charAt(i))) {
             cipheredString += string.charAt(i);
             continue;
         }
