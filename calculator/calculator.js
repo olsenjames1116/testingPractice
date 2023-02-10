@@ -4,7 +4,7 @@ export default class Calculator {
     }
 
     subtract(a, b) {
-        return 1;
+        return a - b;
     }
 
     divide(a, b) {

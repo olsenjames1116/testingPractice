@@ -41,3 +41,7 @@ test('Multiply method returns a number', () => {
 test('Add method returns the sum of two numbers', () => {
     expect(calculator.add(1, 6)).toBe(7);
 });
+
+test('Subtract method returns the difference of two numbers', () => {
+    expect(calculator.subtract(6, 1)).toBe(5);
+});
