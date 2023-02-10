@@ -55,3 +55,7 @@ test('Returns a ciphered lowercase string looping to the back of the alphabet if
 test('Returns a ciphered uppercase string looping to the back of the alphabet if the front is passed', () => {
     expect(caesarCipher('ABCD', -4)).toBe('WXYZ');
 });
+
+test('Returns a ciphered string with the same case', () => {
+    expect(caesarCipher('AbcDe', 1)).toBe('BcdEf');
+});
