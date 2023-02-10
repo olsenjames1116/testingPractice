@@ -12,6 +12,10 @@ test('Returns a ciphered lowercase string shifted by one letter', () => {
     expect(caesarCipher('abcd', 1)).toBe('bcde');
 });
 
+test('Returns a ciphered uppercase string shifted by one letter', () => {
+    expect(caesarCipher('ABCD', 1)).toBe('BCDE');
+});
+
 test('Returns a ciphered lowercase string shifted by multiple letters', () => {
     expect(caesarCipher('abcd', 5)).toBe('fghi');
 });
