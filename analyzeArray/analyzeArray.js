@@ -1,8 +1,21 @@
-export const AnalyzeArray = (array) => {
-    const average = () => {};
-    const min = () => {};
-    const max = () => {};
-    const length = () => {};
+export default class AnalyzeArray {
+    constructor(array) {
+        this.array = array;
+    }
 
-    return { average, min, max, length };
+    get average() {
+        return 1;
+    }
+
+    get min() {
+
+    }
+
+    get max() {
+
+    }
+
+    get length() {
+
+    }
 }

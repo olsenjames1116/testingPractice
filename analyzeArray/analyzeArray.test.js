@@ -1,23 +1,27 @@
-import { AnalyzeArray } from "./analyzeArray.js";
+import AnalyzeArray from "./analyzeArray.js";
 
-const array = AnalyzeArray([1, 8, 3, 4, 2, 6]);
+const array = new AnalyzeArray([1, 8, 3, 4, 2, 6]);
 
 test('Returns an object', () => {
     expect(typeof array).toBe('object');
 });
 
-test('Average is a function', () => {
-    expect(typeof array['average']).toBe('function');
+test('Average getter method exists', () => {
+    expect(Object.getPrototypeOf(array).hasOwnProperty('average')).toBe(true);
 });
 
-test('Min is a function', () => {
-    expect(typeof array['min']).toBe('function');
+test('Average returns a number', () => {
+    expect(typeof array.average).toBe('number');
 });
 
-test('Max is a function', () => {
-    expect(typeof array['max']).toBe('function');
+test('Min getter method exists', () => {
+    expect(Object.getPrototypeOf(array).hasOwnProperty('min')).toBe(true);
 });
 
-test('Length is a function', () => {
-    expect(typeof array['length']).toBe('function');
+test('Max getter method exists', () => {
+    expect(Object.getPrototypeOf(array).hasOwnProperty('max')).toBe(true);
+});
+
+test('Length getter method exists', () => {
+    expect(Object.getPrototypeOf(array).hasOwnProperty('length')).toBe(true);
 });
