@@ -13,3 +13,7 @@ test('Average is a function', () => {
 test('Min is a function', () => {
     expect(typeof array['min']).toBe('function');
 });
+
+test('Max is a function', () => {
+    expect(typeof array['max']).toBe('function');
+});
