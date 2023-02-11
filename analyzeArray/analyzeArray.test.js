@@ -26,6 +26,10 @@ test('Max getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('max')).toBe(true);
 });
 
+test('Max returns a number', () => {
+    expect(typeof array.max).toBe('number');
+});
+
 test('Length getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('length')).toBe(true);
 });

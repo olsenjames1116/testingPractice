@@ -12,7 +12,7 @@ export default class AnalyzeArray {
     }
 
     get max() {
-
+        return 1;
     }
 
     get length() {
