@@ -9,3 +9,7 @@ test('Returns an object', () => {
 test('Average is a function', () => {
     expect(typeof array['average']).toBe('function');
 });
+
+test('Min is a function', () => {
+    expect(typeof array['min']).toBe('function');
+});
