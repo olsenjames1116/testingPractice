@@ -1,6 +1,6 @@
 import AnalyzeArray from "./analyzeArray.js";
 
-const array = new AnalyzeArray([1, 8, 3, 4, 2, 6]);
+const array = new AnalyzeArray([8, 1, 3, 4, 2, 6]);
 
 test('Returns an object', () => {
     expect(typeof array).toBe('object');
@@ -24,6 +24,10 @@ test('Min getter method exists', () => {
 
 test('Min returns a number', () => {
     expect(typeof array.min).toBe('number');
+});
+
+test('Min returns the min of an array', () => {
+    expect(array.min).toBe(1);
 });
 
 test('Max getter method exists', () => {

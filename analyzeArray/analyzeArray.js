@@ -10,7 +10,13 @@ export default class AnalyzeArray {
     }
 
     get min() {
-        return 1;
+        this.array.sort((a, b) => {
+            if(a > b) return 1;
+            if(a < b) return -1;
+            return 0;
+        });
+
+        return this.array[0];
     }
 
     get max() {
