@@ -4,7 +4,9 @@ export default class AnalyzeArray {
     }
 
     get average() {
-        return 1;
+        const sum = this.array.reduce((total, current) => total + current, 0);
+
+        return sum / this.length;
     }
 
     get min() {

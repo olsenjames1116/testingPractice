@@ -14,6 +14,10 @@ test('Average returns a number', () => {
     expect(typeof array.average).toBe('number');
 });
 
+test('Average returns the average of an array', () => {
+    expect(array.average).toBe(4);
+});
+
 test('Min getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('min')).toBe(true);
 });
