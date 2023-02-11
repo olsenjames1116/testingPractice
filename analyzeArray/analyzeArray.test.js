@@ -17,3 +17,7 @@ test('Min is a function', () => {
 test('Max is a function', () => {
     expect(typeof array['max']).toBe('function');
 });
+
+test('Length is a function', () => {
+    expect(typeof array['length']).toBe('function');
+});
