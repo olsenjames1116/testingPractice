@@ -37,3 +37,7 @@ test('Length getter method exists', () => {
 test('Length returns a number', () => {
     expect(typeof array.length).toBe('number');
 });
+
+test('Length returns the length of an array', () => {
+    expect(array.length).toBe(6);
+});
