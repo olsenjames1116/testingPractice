@@ -18,6 +18,10 @@ test('Min getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('min')).toBe(true);
 });
 
+test('Min returns a number', () => {
+    expect(typeof array.min).toBe('number');
+});
+
 test('Max getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('max')).toBe(true);
 });

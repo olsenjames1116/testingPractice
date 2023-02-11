@@ -8,7 +8,7 @@ export default class AnalyzeArray {
     }
 
     get min() {
-
+        return 1;
     }
 
     get max() {
