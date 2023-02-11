@@ -33,3 +33,7 @@ test('Max returns a number', () => {
 test('Length getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('length')).toBe(true);
 });
+
+test('Length returns a number', () => {
+    expect(typeof array.length).toBe('number');
+});

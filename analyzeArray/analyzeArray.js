@@ -16,6 +16,6 @@ export default class AnalyzeArray {
     }
 
     get length() {
-
+        return 1;
     }
 }
