@@ -2,15 +2,25 @@
 
 A suite of modules that complete a variety of tasks. All of these were created to practice using Jest and TDD.
 
-Analyze Array: Takes in an array and calculates the average, min, max and length.
+# Analyze Array
 
-Caesar Cipher: Utilizes the Caesar cipher algorithm to cipher a given string. The Caesar cipher shifts each letter in a string by a given value up or down the alphabet.
+Takes in an array and calculates the average, min, max and length.
 
-Calculator: Takes in two values and returns them with a mathematical operation performed on them. The calculator has methods to handle addition, subtraction, division and multiplication.
+# Caesar Cipher
 
-Capitalize: Takes in a string and returns it with the first character capitalized.
+Utilizes the Caesar cipher algorithm to cipher a given string. The Caesar cipher shifts each letter in a string by a given value up or down the alphabet.
 
-Reverse String: Takes in a string and returns it reversed.
+# Calculator
+
+Takes in two values and returns them with a mathematical operation performed on them. The calculator has methods to handle addition, subtraction, division and multiplication.
+
+# Capitalize
+
+Takes in a string and returns it with the first character capitalized.
+
+# Reverse String
+
+Takes in a string and returns it reversed.
 
 This project highlights:
 
