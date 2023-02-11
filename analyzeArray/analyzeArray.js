@@ -1,3 +1,5 @@
-export default function analyzeArray(array) {
-    return {};
+export const AnalyzeArray = (array) => {
+    const average = () => {};
+
+    return { average };
 }
