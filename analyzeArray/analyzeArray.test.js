@@ -38,6 +38,10 @@ test('Max returns a number', () => {
     expect(typeof array.max).toBe('number');
 });
 
+test('Max returns the max of an array', () => {
+    expect(array.max).toBe(8);
+});
+
 test('Length getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('length')).toBe(true);
 });

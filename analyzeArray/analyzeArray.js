@@ -20,7 +20,13 @@ export default class AnalyzeArray {
     }
 
     get max() {
-        return 1;
+        this.array.sort((a, b) => {
+            if(a > b) return 1;
+            if(a < b) return -1;
+            return 0;
+        });
+
+        return this.array[this.array.length - 1];
     }
 
     get length() {
