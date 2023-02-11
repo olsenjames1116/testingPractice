@@ -64,14 +64,14 @@ test('Ignores punctuation', () => {
     expect(caesarCipher('Hey!', 1)).toBe('Ifz!');
 });
 
-test('Returns error message if anything other than a string is passed', () => {
-    expect(caesarCipher(1234, 1)).toBe('Error: please pass a string');
-});
-
 test('Ignores spaces', () => {
     expect(caesarCipher('ab c', 1)).toBe('bc d');
 });
 
 test('Ignores numbers in a string', () => {
     expect(caesarCipher('ab1', 1)).toBe('bc1');
+});
+
+test('Returns error message if anything other than a string is passed', () => {
+    expect(caesarCipher(1234, 1)).toBe('Error: please pass a string');
 });
