@@ -6,6 +6,7 @@ test('Calculator object is created', () => {
     expect(calculator).toEqual({});
 });
 
+// The necessary methods exist in the object
 test('Calculator contains add method', () => {
     expect(typeof calculator['add']).toBe('function');
 });
@@ -22,6 +23,7 @@ test('Calculator contains multiply method', () => {
     expect(typeof calculator['multiply']).toBe('function');
 });
 
+// All methods return a number
 test('Add method returns a number', () => {
     expect(typeof calculator.add()).toBe('number');
 });
@@ -38,6 +40,7 @@ test('Multiply method returns a number', () => {
     expect(typeof calculator.multiply()).toBe('number');
 });
 
+// Methods complete the appropriate math operations
 test('Add method returns the sum of two numbers', () => {
     expect(calculator.add(1, 6)).toBe(7);
 });

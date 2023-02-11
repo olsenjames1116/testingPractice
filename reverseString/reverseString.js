@@ -1,3 +1,4 @@
+// Reverses a given string
 export default function reverseString(string) {
     const stringArray = string.split('');
     let reversedArray = [];

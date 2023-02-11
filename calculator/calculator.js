@@ -1,3 +1,4 @@
+// Create an object to represent a calculator with a few basic math operations
 export default class Calculator {
     add(a, b) {
         return a + b;

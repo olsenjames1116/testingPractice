@@ -6,6 +6,8 @@ test('Returns an object', () => {
     expect(typeof array).toBe('object');
 });
 
+
+// Average method tests
 test('Average getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('average')).toBe(true);
 });
@@ -18,6 +20,7 @@ test('Average returns the average of an array', () => {
     expect(array.average).toBe(4);
 });
 
+// Min method tests
 test('Min getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('min')).toBe(true);
 });
@@ -30,6 +33,7 @@ test('Min returns the min of an array', () => {
     expect(array.min).toBe(1);
 });
 
+// Max method tests
 test('Max getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('max')).toBe(true);
 });
@@ -42,6 +46,7 @@ test('Max returns the max of an array', () => {
     expect(array.max).toBe(8);
 });
 
+// Length method tests
 test('Length getter method exists', () => {
     expect(Object.getPrototypeOf(array).hasOwnProperty('length')).toBe(true);
 });
